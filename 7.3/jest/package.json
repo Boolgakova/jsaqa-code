@@ -5,6 +5,7 @@
   "main": "index.js",
 
   "jest": {
+    "verbose": true,
     "collectCoverage": true,
     "coverageReporters": ["html"],
     "collectCoverageFrom": [
@@ -13,9 +14,11 @@
       "!**/coverage/**"
       ],
       "coverageThreshold": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100
+        "global": {
+          "branches": 100,
+          "functions": 100,
+          "lines": 100
+        }        
       }
   },
 
