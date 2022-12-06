@@ -1,13 +1,13 @@
 const config = {
   testDir: "tests",
 
-  timeout: 60000,
+  timeout: 180000,
 
   use: {
     headless: false,
-    screenshot: "off",
+    screenshot: "on",
     launchOptions: {
-      slowMo: 60000,
+      slowMo: 500,
     },
   },
 };
